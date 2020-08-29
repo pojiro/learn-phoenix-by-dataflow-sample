@@ -10,10 +10,9 @@ defmodule MyAppWeb.StaticHTMLController do
     only: ~w(css)
 
   def index(conn, _params) do
-    IO.inspect("inside index")
     # "/static/hello/world.html" へのGETリクエストの場合
     # conn.params["path"] は ["hello", "world.html"] となっています。
-    html_path = Enum.join(["priv/static_html" | conn.params["path"]], "/")
+    html_path = Path.join(["priv/static_html" | conn.params["path"]])
 
     case File.read(html_path) do
       {:ok, data} ->
