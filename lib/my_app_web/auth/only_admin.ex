@@ -21,6 +21,6 @@ defmodule MyAppWeb.Auth.OnlyAdmin do
 
   defp admin?(_conn) do
     # 本筋から外れるので省略しますが、本来はここに管理者判定ロジックを書きます
-    true
+    false
   end
 end
