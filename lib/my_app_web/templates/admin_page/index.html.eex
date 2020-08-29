@@ -1,0 +1,7 @@
+<section class="phx-hero">
+  <h1><%= gettext "データフローで学ぶ %{name}!", name: "Phoenix" %></h1>
+  <h1><%= "管理者ページ" %></h1>
+</section>
+
+<%= link("Back to top", to: MyAppWeb.Router.Helpers.page_path(@conn, :index)) %>
+

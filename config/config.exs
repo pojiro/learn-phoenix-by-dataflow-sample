@@ -9,7 +9,7 @@ use Mix.Config
 
 # Configures the endpoint
 config :my_app, MyAppWeb.Endpoint,
-  url: [host: "localhost"],
+  url: [host: "localhost", path: "/"],
   secret_key_base: "QvZ0u7qjV5VMstzoLMbsk913pS5kS+4Li8ZmM1YMuCoJKKBfPuva17MlYYbj824f",
   render_errors: [view: MyAppWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: MyApp.PubSub,

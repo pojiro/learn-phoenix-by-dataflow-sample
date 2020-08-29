@@ -1,37 +1,68 @@
 <section class="phx-hero">
-  <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
-  <p>Peace of mind from prototype to production</p>
+  <h1><%= gettext "データフローで学ぶ %{name}", name: "Phoenix" %></h1>
 </section>
 
 <section class="row">
   <article class="column">
-    <h2>Resources</h2>
+    <h2>Samples</h2>
     <ul>
       <li>
-        <a href="https://hexdocs.pm/phoenix/overview.html">Guides &amp; Docs</a>
+        <a href="/admin">管理者ページリダイレクト</a>
       </li>
       <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix/blob/v1.5/CHANGELOG.md">v1.5 Changelog</a>
+        <a href="/static/index.html">静的HTMLライブリロード</a>
       </li>
     </ul>
   </article>
   <article class="column">
-    <h2>Help</h2>
+    <h2>コミュニティ</h2>
     <ul>
       <li>
-        <a href="https://elixirforum.com/c/phoenix-forum">Forum</a>
+        <span>フォーラム</span>
+        <ul>
+          <li>
+            <a href="https://elixirforum.com/">Elixir Forum</a>
+          </li>
+        </ul>
       </li>
       <li>
-        <a href="https://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on Freenode IRC</a>
+        <span>勉強会</span>
+        <ul>
+          <li>
+            <a href="https://fukuokaex.connpass.com/">fukuoka.ex &amp; kokura.ex</a>
+          </li>
+          <li>
+            <a href="https://sapporo-beam.connpass.com/">Sapporo.beam</a>
+          </li>
+          <li>
+            <a href="https://okazakirin-beam.connpass.com/">OkazaKirin.beam</a>
+          </li>
+        </ul>
       </li>
       <li>
-        <a href="https://twitter.com/elixirphoenix">Twitter @elixirphoenix</a>
+        <span>カンファレンス</span>
+        <ul>
+          <li>
+            <a href="https://elixirconf.com/">Elixir Conf US</a>
+          </li>
+          <li>
+            <a href="https://www.elixirconf.eu/">ELixir Conf EU</a>
+          </li>
+          <li>
+            <a href="https://fukuokaex.fun/">ELixir Conf JP 2019 Kokurajo</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </article>
+  <article class="column">
+    <h2>Webサイト</h2>
+    <ul>
+      <li>
+        <a href="https://dashbit.co/blog">Dashbit Blog</a>
       </li>
       <li>
-        <a href="https://elixir-slackin.herokuapp.com/">Elixir on Slack</a>
+        <a href="https://www.tombo-works.com/notes/language/elixir/index.html">Tombo Notes</a>
       </li>
     </ul>
   </article>

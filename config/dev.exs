@@ -52,7 +52,8 @@ config :my_app, MyAppWeb.Endpoint,
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
       ~r"lib/my_app_web/(live|views)/.*(ex)$",
-      ~r"lib/my_app_web/templates/.*(eex)$"
+      ~r"lib/my_app_web/templates/.*(eex)$",
+      ~r"priv/static_html/.*(js|css|png|jpeg|jpg|gif|svg|html)$"
     ]
   ]
 

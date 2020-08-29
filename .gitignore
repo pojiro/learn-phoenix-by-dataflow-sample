@@ -35,3 +35,4 @@ npm-debug.log
 
 # ide settings
 .elixir_ls/
+.idea/

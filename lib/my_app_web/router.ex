@@ -9,14 +9,35 @@ defmodule MyAppWeb.Router do
     plug :put_secure_browser_headers
   end
 
+  pipeline :do_nothing do
+    plug MyAppWeb.DoNothingPlug
+  end
+
+  pipeline :only_admin do
+    plug MyAppWeb.Auth.OnlyAdmin
+  end
+
   pipeline :api do
     plug :accepts, ["json"]
   end
 
   scope "/", MyAppWeb do
     pipe_through :browser
+    pipe_through :do_nothing
 
     get "/", PageController, :index
+  end
+
+  scope "/admin", MyAppWeb do
+    pipe_through :browser
+    pipe_through :only_admin
+
+    get "/", AdminPageController, :index
+  end
+
+  scope "/static", MyAppWeb do
+    pipe_through :browser
+    get "/*path", StaticHTMLController, :index
   end
 
   # Other scopes may use custom stacks.
