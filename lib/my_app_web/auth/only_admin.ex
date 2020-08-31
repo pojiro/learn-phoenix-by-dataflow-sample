@@ -1,6 +1,7 @@
 defmodule MyAppWeb.Auth.OnlyAdmin do
   import Phoenix.Controller, only: [redirect: 2]
   import Plug.Conn, only: [halt: 1]
+
   def init(opts), do: opts
 
   def call(conn, _opts) do
